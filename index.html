@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>DevJobs Search</title>
+</head>
+<body>
+
+    <header>
+        <div id="users"></div>
+        <div class="header-container">
+
+            <h1 class="logo">devjobs</h1>
+
+            <div class="theme-switch">
+
+                <img src="assets/desktop/icon-sun.svg" alt="sun" />
+
+                <div class="switch-container">
+                    <div class="switch"></div>
+                </div>
+
+                <img src="assets/desktop/icon-moon.svg" alt="sun" />
+
+            </div>
+
+        </div>
+
+        <div class="search-container">
+
+            <div class="search-section search-container-first">
+
+                <img src="assets/desktop/icon-search.svg" alt="search icon" class="hide-on-800" />
+
+                <input type="text" placeholder="Filter by title, companies, expertise..." id="search" />
+
+            </div>
+
+            <div class="location-section hide-on-1000">
+
+                <img src="assets/desktop/icon-location.svg" alt="location icon" class="hide-on-1000" />
+
+                <input type="text" placeholder="Filter by location..." id="location" list="locations" class="hide-on-1000" />
+
+                <datalist id="locations">
+                    <option value="Leeds, Maidstone">
+                    <option value="London, UK">
+                    <option value="Croydon, London">
+                    <option value="Cambridge, Cambridgeshire">
+                    <option value="Tilbury, Essex">
+                    <option value="Glasgow, Scotland">
+                    <option value="Bristol, South West England">
+                </datalist>
+
+            </div>
+
+            <div class="full-time-section">
+
+                <label class="checkbox-container hide-on-1000">
+                    <input type="checkbox" id="full-time">
+                    <span class="checkmark">
+                        <img src="assets/desktop/icon-check.svg" alt="check" />
+                    </span>Full Time
+                </label>
+
+                <button class="filter-button">
+                    <img src="assets/mobile/icon-filter.svg" alt="filter-icon" />
+                </button>
+
+                <button>
+                    <span class="hide-on-800">Search</span>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="show-on-800"><path d="M17.112 15.059h-1.088l-.377-.377a8.814 8.814 0 002.15-5.784A8.898 8.898 0 008.898 0 8.898 8.898 0 000 8.898a8.898 8.898 0 008.898 8.899c2.211 0 4.23-.808 5.784-2.143l.377.377v1.081l6.845 6.832 2.04-2.04-6.832-6.845zm-8.214 0A6.16 6.16 0 118.9 2.737a6.16 6.16 0 010 12.322z" fill="white" fill-rule="nonzero"/></svg>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="shader">
+
+            <div class="popup">
+
+                <div class="location-section-mobile">
+
+                    <img src="assets/desktop/icon-location.svg" alt="location icon" />
+    
+                    <input type="text" placeholder="Filter by location..." id="location" list="locations" />
+    
+                    <datalist id="locations">
+                        <option value="United States">
+                        <option value="UK">
+                        <option value="Russia">
+                        <option value="Germany">
+                        <option value="Japan">
+                        <option value="Singapore">
+                        <option value="New Zealand">
+                    </datalist>
+    
+                </div>
+
+                <div class="full-time-section-mobile">
+
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="full-time">
+                        <span class="checkmark">
+                            <img src="assets/desktop/icon-check.svg" alt="check" />
+                        </span>Full Time Only
+                    </label>
+    
+                </div>
+
+                <button>Search</button>
+
+            </div>
+
+        </div>
+
+        <div class="job-top">
+
+            <div class="job-logo-big"></div>
+
+            <div class="company-info">
+                <h1>Scoot</h1>
+                <p>scoot.com</p>
+            </div>
+
+            <button class="button-secondary">Company Site</button>
+
+        </div>
+
+    </header>
+
+    <main class="job-cards"></main>
+
+    <section>
+
+        <div class="description-top">
+
+            <p class="description-info">1w ago • Part Time</p>
+            <h1>Senior Software Engineer</h1>
+            <p class="job-location">United Kingdom</p>
+
+            <button>Apply Now</button>
+
+        </div>
+
+        <p class="job-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempora cumque consectetur modi nam? Aspernatur veniam officiis itaque vel odit, minus rerum exercitationem laboriosam facilis vero maiores quisquam consequuntur pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tempore magni reprehenderit accusamus. Nostrum iusto voluptatum dolor itaque perspiciatis? Officia saepe magni necessitatibus reiciendis similique voluptas nemo natus sit sapiente? Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+        <h3>Requirements</h3>
+
+        <p class="job-requirements">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis ut maxime optio unde dicta nulla maiores quos dolorum sapiente consequuntur eos id aspernatur debitis quae, iure odit, deserunt a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum officiis asperiores, necessitatibus esse laboriosam ab perferendis quaerat rem enim hic harum magni voluptas est provident.</p>
+
+        <ul class="requirements-list"></ul>
+
+        <h3>What You Will Do</h3>
+
+        <p class="job-duties">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem veritatis ut maxime optio unde dicta nulla maiores quos dolorum sapiente consequuntur eos id aspernatur debitis quae, iure odit, deserunt a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum officiis asperiores, necessitatibus esse laboriosam ab perferendis quaerat rem enim hic harum magni voluptas est provident.</p>
+
+        <ul class="duties-list"></ul>
+
+    </section>
+
+    <button class="load-more">Load More</button>
+
+    <div class="job-bottom">
+
+        <div>
+
+            <h3 class="hide-on-550">Senior Software Engineer</h3>
+            <p class="hide-on-550">So Digital Inc.</p>
+
+            <button>Apply Now</button>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
